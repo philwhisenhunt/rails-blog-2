@@ -6,6 +6,6 @@ require 'test_helper'
 class HighScoreTest < ActiveSupport::TestCase
   test "High score should not be higher than 5000" do
     highScore = HighScore.new
-    assert_not article.save
+    assert_not highScore.save
   end
 end
