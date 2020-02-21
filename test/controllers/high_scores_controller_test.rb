@@ -8,6 +8,7 @@ class HighScoresControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
     get high_scores_url
     assert_response :success
+    assert_not_nil assigns(:high_scores)
   end
 
   test "should get new" do
