@@ -75,11 +75,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+  production:
+    url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: rails_blog_2_production
-  username: rails_blog_2
-  password: <%= ENV['RAILS_BLOG_2_DATABASE_PASSWORD'] %>
+# production:
+#   <<: *default
+#   database: rails_blog_2_production
+#   username: rails_blog_2
+#   password: <%= ENV['RAILS_BLOG_2_DATABASE_PASSWORD'] %>
