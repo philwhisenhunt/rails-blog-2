@@ -6,8 +6,9 @@ require 'test_helper'
 class HighScoreTest < ActiveSupport::TestCase
   test "High score should save" do
     highScore = HighScore.new
-    assert highScore.save
+    assert_not highScore.save
   end
 
-  
+
 end
+ 
